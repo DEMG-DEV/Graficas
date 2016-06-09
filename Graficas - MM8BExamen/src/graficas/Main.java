@@ -314,57 +314,58 @@ public class Main extends javax.swing.JFrame {
         gl.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void regla(java.awt.event.KeyEvent evt) {       
-        if (evt.getKeyChar() >= '0' && evt.getKeyChar() <= '9' || evt.getKeyCode()!= KeyEvent.VK_BACK_SPACE) {
+    private void regla(java.awt.event.KeyEvent evt, String valor) {
+        if (valor.equals("")) {
+            evt.setKeyChar('0');
+        } else if (evt.getKeyChar() >= '0' && evt.getKeyChar() <= '9') {
         } else {
             evt.setKeyChar('\0');
-            evt.setKeyChar('0');
         }
     }
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField1.getText());
     }//GEN-LAST:event_jTextField1KeyTyped
 
     private void jTextField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField2.getText());
     }//GEN-LAST:event_jTextField2KeyTyped
 
     private void jTextField3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField3KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField3.getText());
     }//GEN-LAST:event_jTextField3KeyTyped
 
     private void jTextField4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField4KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField4.getText());
     }//GEN-LAST:event_jTextField4KeyTyped
 
     private void jTextField5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField5KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField5.getText());
     }//GEN-LAST:event_jTextField5KeyTyped
 
     private void jTextField6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField6KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField6.getText());
     }//GEN-LAST:event_jTextField6KeyTyped
 
     private void jTextField7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField7KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField7.getText());
     }//GEN-LAST:event_jTextField7KeyTyped
 
     private void jTextField8KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField8KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField8.getText());
     }//GEN-LAST:event_jTextField8KeyTyped
 
     private void jTextField9KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField9KeyTyped
         // TODO add your handling code here:
-        regla(evt);
+        regla(evt,jTextField9.getText());
     }//GEN-LAST:event_jTextField9KeyTyped
 
     /**
