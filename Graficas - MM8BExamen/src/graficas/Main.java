@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package graficas.mm8bexamen;
+package graficas;
+
+import java.awt.event.KeyEvent;
 
 /**
  *
@@ -312,8 +314,8 @@ public class Main extends javax.swing.JFrame {
         gl.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void regla(java.awt.event.KeyEvent evt) {
-        if (evt.getKeyChar() >= '0' && evt.getKeyChar() <= '9') {
+    private void regla(java.awt.event.KeyEvent evt) {       
+        if (evt.getKeyChar() >= '0' && evt.getKeyChar() <= '9' || evt.getKeyCode()!= KeyEvent.VK_BACK_SPACE) {
         } else {
             evt.setKeyChar('\0');
             evt.setKeyChar('0');
